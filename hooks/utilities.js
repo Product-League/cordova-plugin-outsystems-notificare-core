@@ -60,12 +60,12 @@ function getSourceFolderPath(context, wwwPath) {
     console.log("Using deprecated way to look for configuration files' folder");
     if (cordovaAbove7) {
       sourceFolderPath = path.join(context.opts.projectRoot, "www", constants.folderNamePrefix + appId);
-      console.log("Using sourceFolderPath: " + sourceFolderPath);
     } else {
       sourceFolderPath = path.join(wwwPath, constants.folderNamePrefix + appId);
-      console.log("Using sourceFolderPath: " + sourceFolderPath);
     }
   }
+
+  console.log("Using sourceFolderPath: " + sourceFolderPath);
 
   return sourceFolderPath;
 }
