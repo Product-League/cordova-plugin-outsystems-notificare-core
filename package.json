@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-outsystems-notificare-core",
+  "version": "1.0.1",
+  "description": "Core Plugin for OutSystems Firebase Plugins",
+  "cordova": {
+    "id": "cordova-plugin-outsystems-notificare-core",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Miguel 'Kelter' Antunes",
+  "license": "MIT"
+}
