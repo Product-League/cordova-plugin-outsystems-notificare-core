@@ -43,7 +43,7 @@ module.exports = function(context) {
   }
 
   var fileName = files.find(function (name) {
-    return name.endsWith(platformConfig.firebaseFileExtension);
+    return name.endsWith(platformConfig.notificareFileExtension);
   });
   if (!fileName) {
     utils.handleError("No file found", defer);
