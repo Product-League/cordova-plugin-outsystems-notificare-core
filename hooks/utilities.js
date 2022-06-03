@@ -51,8 +51,10 @@ function getSourceFolderPath(context, wwwPath) {
   // New way of looking for the configuration files' folder
   if (cordovaAbove7) {
     sourceFolderPath = path.join(context.opts.projectRoot, "www", appId + constants.folderNameSuffix);
+    console.log("Using #1 sourceFolderPath: " + sourceFolderPath);
   } else {
     sourceFolderPath = path.join(wwwPath, appId + constants.folderNameSuffix);
+    console.log("Using #2 sourceFolderPath: " + sourceFolderPath);
   }
 
   // Fallback to deprecated way of looking for the configuration files' folder
@@ -60,8 +62,10 @@ function getSourceFolderPath(context, wwwPath) {
     console.log("Using deprecated way to look for configuration files' folder");
     if (cordovaAbove7) {
       sourceFolderPath = path.join(context.opts.projectRoot, "www", constants.folderNamePrefix + appId);
+      console.log("Using #3 sourceFolderPath: " + sourceFolderPath);
     } else {
       sourceFolderPath = path.join(wwwPath, constants.folderNamePrefix + appId);
+      console.log("Using #4 sourceFolderPath: " + sourceFolderPath);
     }
   }
 
