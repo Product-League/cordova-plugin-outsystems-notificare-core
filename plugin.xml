@@ -7,10 +7,10 @@
 	<hook type="before_plugin_install" src="hooks/installDependencies.js" />
 	<hook type="before_plugin_install" src="hooks/unzipAndCopyConfigurations.js" />
 
-	<platform name="ios">
+	<platform name="android">
 		<resource-file src="notificare-services.json" target="app/notificare-services.json" />
 	</platform>
-	<platform name="android">
+	<platform name="ios">
 		<resource-file src="NotificareServices.plist" target="NotificareServices.plist" />
 	</platform>
 
